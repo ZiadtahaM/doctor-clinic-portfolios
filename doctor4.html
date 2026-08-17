@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. James Wilson - Orthopedic Surgeon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="text-3xl font-bold text-gray-800">Dr. James Wilson</div>
+                    <div class="ml-4 text-sm text-gray-600">Orthopedic Surgeon</div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-gray-800 font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-gray-800 font-medium">Services</a>
+                    <a href="#appointments" class="text-gray-700 hover:text-gray-800 font-medium">Appointments</a>
+                    <a href="#contact" class="text-gray-700 hover:text-gray-800 font-medium">Contact</a>
+                </nav>
+                <button onclick="showBooking()" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors">
+                    Book Appointment
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl font-bold mb-6">
+                        Elite <span class="text-blue-400">Sports Medicine</span> & Orthopedics
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-200">
+                        20 years of excellence in orthopedic surgery, sports medicine, and joint replacement. Trusted by professional athletes and Olympic teams.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="showBooking()" class="bg-blue-500 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-600 transition-colors">
+                            Schedule Surgery Consultation
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-white hover:text-gray-800 transition-colors">
+                            Sports Medicine Info
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         alt="Dr. James Wilson" 
+                         class="rounded-2xl shadow-2xl w-full h-96 object-cover">
+                    <div class="absolute -bottom-6 -right-6 bg-white text-gray-800 p-6 rounded-xl shadow-lg">
+                        <div class="text-3xl font-bold">5000+</div>
+                        <div class="text-sm">Surgeries</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Dr. James Wilson</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Renowned orthopedic surgeon with expertise in sports medicine and joint replacement surgery
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl card-hover">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Education & Training</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• MD from UCLA Medical School</li>
+                        <li>• Orthopedic Surgery Residency at HSS</li>
+                        <li>• Sports Medicine Fellowship</li>
+                        <li>• Board Certified Orthopedic Surgeon</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-xl card-hover">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Specializations</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Joint Replacement Surgery</li>
+                        <li>• Sports Medicine</li>
+                        <li>• Arthroscopic Surgery</li>
+                        <li>• Trauma & Fracture Care</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-50 p-8 rounded-xl card-hover">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Professional Experience</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Olympic Team Physician</li>
+                        <li>• Professional Sports Consultant</li>
+                        <li>• 5000+ Successful Surgeries</li>
+                        <li>• 4.7/5 Patient Rating</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Orthopedic Services</h2>
+                <p class="text-lg text-gray-600">Advanced surgical and non-surgical treatments</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🦴</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Joint Replacement</h3>
+                    <p class="text-gray-600 mb-4">Hip, knee, and shoulder replacement surgery</p>
+                    <div class="text-gray-800 font-medium">$15,000 - $35,000</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">⚽</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Sports Medicine</h3>
+                    <p class="text-gray-600 mb-4">Athletic injury treatment and prevention</p>
+                    <div class="text-gray-800 font-medium">$200 - $500</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🔬</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Arthroscopic Surgery</h3>
+                    <p class="text-gray-600 mb-4">Minimally invasive joint procedures</p>
+                    <div class="text-gray-800 font-medium">$3,000 - $8,000</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🩹</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Fracture Care</h3>
+                    <p class="text-gray-600 mb-4">Emergency and complex fracture treatment</p>
+                    <div class="text-gray-800 font-medium">$1,000 - $10,000</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">💪</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Physical Therapy</h3>
+                    <p class="text-gray-600 mb-4">Rehabilitation and recovery programs</p>
+                    <div class="text-gray-800 font-medium">$100 - $200</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🏥</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Consultation</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive orthopedic evaluation</p>
+                    <div class="text-gray-800 font-medium">$300 - $500</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Times -->
+    <section id="appointments" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Surgery & Consultation Schedule</h2>
+                <p class="text-lg text-gray-600">Available times for consultations and procedures</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Monday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">6:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">8:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">10:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">12:00 PM</div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Tuesday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">6:30 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">9:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">11:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">1:00 PM</div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Wednesday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">12:00 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">2:00 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">4:00 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">6:00 PM</div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Thursday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">7:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">9:30 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">11:30 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-gray-100 transition-colors">1:30 PM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Contact Dr. Wilson</h2>
+                <p class="text-lg text-gray-300">Expert orthopedic care when you need it</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-4xl mb-4">📞</div>
+                    <h3 class="text-xl font-bold mb-2">Phone</h3>
+                    <p class="text-gray-300">(555) 123-BONE</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4">📧</div>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-gray-300">dr.wilson@orthosports.com</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4">📍</div>
+                    <h3 class="text-xl font-bold mb-2">Location</h3>
+                    <p class="text-gray-300">321 Sports Medicine Blvd<br>Athletic Center, FL 33101</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showBooking() {
+            alert('Booking system would open here. Contact (555) 123-BONE for surgical consultations.');
+        }
+    </script>
+</body>
+</html>

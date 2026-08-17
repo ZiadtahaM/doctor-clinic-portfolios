@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Lisa Thompson - Dermatologist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #ffeef8 0%, #f0e6ff 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-pink-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="text-3xl font-bold text-pink-600">Dr. Lisa Thompson</div>
+                    <div class="ml-4 text-sm text-gray-600">Dermatologist</div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-pink-600 font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-pink-600 font-medium">Services</a>
+                    <a href="#appointments" class="text-gray-700 hover:text-pink-600 font-medium">Appointments</a>
+                    <a href="#contact" class="text-gray-700 hover:text-pink-600 font-medium">Contact</a>
+                </nav>
+                <button onclick="showBooking()" class="bg-pink-600 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition-colors">
+                    Book Appointment
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                        Beautiful, <span class="text-pink-600">Healthy Skin</span> for Life
+                    </h1>
+                    <p class="text-xl text-gray-700 mb-8">
+                        Expert medical and cosmetic dermatology with 10 years of experience. Specializing in skin cancer detection, Mohs surgery, and advanced aesthetic treatments.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="showBooking()" class="bg-pink-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-pink-700 transition-colors">
+                            Book Skin Consultation
+                        </button>
+                        <button class="border-2 border-pink-600 text-pink-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-pink-600 hover:text-white transition-colors">
+                            Cosmetic Services
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         alt="Dr. Lisa Thompson" 
+                         class="rounded-2xl shadow-2xl w-full h-96 object-cover">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                        <div class="text-3xl font-bold text-pink-600">2000+</div>
+                        <div class="text-gray-600">Happy Patients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Dr. Lisa Thompson</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Board-certified dermatologist specializing in medical and cosmetic skin care
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-pink-50 p-8 rounded-xl card-hover">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Education</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• MD from University of Pennsylvania</li>
+                        <li>• Dermatology Residency at NYU</li>
+                        <li>• Mohs Surgery Fellowship</li>
+                        <li>• Board Certified Dermatologist</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-purple-50 p-8 rounded-xl card-hover">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Specializations</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Medical Dermatology</li>
+                        <li>• Cosmetic Procedures</li>
+                        <li>• Mohs Surgery</li>
+                        <li>• Skin Cancer Detection</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-xl card-hover">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Languages & Recognition</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• English & French</li>
+                        <li>• Dermatology Excellence Award</li>
+                        <li>• Top Doctor Recognition</li>
+                        <li>• 4.8/5 Patient Rating</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-pink-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Dermatology Services</h2>
+                <p class="text-lg text-gray-600">Medical and cosmetic skin treatments</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🔍</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Skin Cancer Screening</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive mole and lesion examination</p>
+                    <div class="text-pink-600 font-medium">$150 - $250</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Botox & Fillers</h3>
+                    <p class="text-gray-600 mb-4">Anti-aging and facial rejuvenation treatments</p>
+                    <div class="text-pink-600 font-medium">$300 - $800</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🔬</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Mohs Surgery</h3>
+                    <p class="text-gray-600 mb-4">Precise skin cancer removal technique</p>
+                    <div class="text-pink-600 font-medium">$1,000 - $3,000</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">💎</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Chemical Peels</h3>
+                    <p class="text-gray-600 mb-4">Skin resurfacing and texture improvement</p>
+                    <div class="text-pink-600 font-medium">$100 - $400</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Laser Treatments</h3>
+                    <p class="text-gray-600 mb-4">Hair removal, pigmentation, and scar treatment</p>
+                    <div class="text-pink-600 font-medium">$200 - $600</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🌟</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Acne Treatment</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive acne management programs</p>
+                    <div class="text-pink-600 font-medium">$100 - $300</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Times -->
+    <section id="appointments" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Available Appointment Times</h2>
+                <p class="text-lg text-gray-600">Flexible scheduling for all your skin care needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-pink-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Monday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">9:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">11:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">2:00 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">4:00 PM</div>
+                    </div>
+                </div>
+                
+                <div class="bg-pink-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Tuesday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">9:30 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">12:00 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">2:30 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">4:30 PM</div>
+                    </div>
+                </div>
+                
+                <div class="bg-pink-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Wednesday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">11:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">1:00 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">3:00 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">5:00 PM</div>
+                    </div>
+                </div>
+                
+                <div class="bg-pink-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Thursday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">10:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">12:30 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">3:30 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-pink-100 transition-colors">5:30 PM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Contact Dr. Thompson</h2>
+                <p class="text-lg text-gray-300">Expert dermatological care for healthy, beautiful skin</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-4xl mb-4">📞</div>
+                    <h3 class="text-xl font-bold mb-2">Phone</h3>
+                    <p class="text-gray-300">(555) 123-SKIN</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4">📧</div>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-gray-300">dr.thompson@skincare.com</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4">📍</div>
+                    <h3 class="text-xl font-bold mb-2">Location</h3>
+                    <p class="text-gray-300">654 Beauty Boulevard<br>Aesthetic District, CA 90210</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showBooking() {
+            alert('Booking system would open here. Contact (555) 123-SKIN for your skin consultation.');
+        }
+    </script>
+</body>
+</html>

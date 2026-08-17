@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Michael Chen - Neurologist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="text-3xl font-bold text-purple-600">Dr. Michael Chen</div>
+                    <div class="ml-4 text-sm text-gray-600">Neurologist</div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 font-medium">Services</a>
+                    <a href="#appointments" class="text-gray-700 hover:text-purple-600 font-medium">Appointments</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium">Contact</a>
+                </nav>
+                <button onclick="showBooking()" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors">
+                    Book Appointment
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl font-bold mb-6">
+                        Advanced <span class="text-yellow-300">Neurological Care</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-purple-100">
+                        Specializing in epilepsy, movement disorders, and cutting-edge neurological treatments with 12 years of clinical excellence.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="showBooking()" class="bg-yellow-400 text-purple-900 px-8 py-4 rounded-lg text-lg font-bold hover:bg-yellow-300 transition-colors">
+                            Schedule Consultation
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-white hover:text-purple-600 transition-colors">
+                            View Research
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         alt="Dr. Michael Chen" 
+                         class="rounded-2xl shadow-2xl w-full h-96 object-cover">
+                    <div class="absolute -bottom-6 -right-6 bg-white text-purple-600 p-6 rounded-xl shadow-lg">
+                        <div class="text-3xl font-bold">50+</div>
+                        <div class="text-sm">Research Papers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Dr. Michael Chen</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Leading neurologist and researcher specializing in epilepsy and movement disorders
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-purple-50 p-8 rounded-xl card-hover">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Education & Training</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• MD from Johns Hopkins University</li>
+                        <li>• Neurology Residency at UCSF</li>
+                        <li>• Fellowship in Epilepsy at Mayo Clinic</li>
+                        <li>• Board Certified Neurologist</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-xl card-hover">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Specializations</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Epilepsy & Seizure Disorders</li>
+                        <li>• Movement Disorders</li>
+                        <li>• Parkinson's Disease</li>
+                        <li>• Neurological Diagnostics</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-50 p-8 rounded-xl card-hover">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Research & Awards</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• 50+ Published Research Papers</li>
+                        <li>• Clinical Trial Leader</li>
+                        <li>• Neurological Society Award</li>
+                        <li>• 4.8/5 Patient Rating</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Neurological Services</h2>
+                <p class="text-lg text-gray-600">Comprehensive brain and nervous system care</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Neurological Consultation</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive evaluation of neurological symptoms</p>
+                    <div class="text-purple-600 font-medium">$250 - $350</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">EEG Testing</h3>
+                    <p class="text-gray-600 mb-4">Electroencephalogram for seizure diagnosis</p>
+                    <div class="text-purple-600 font-medium">$300 - $500</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🔬</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">EMG/NCS</h3>
+                    <p class="text-gray-600 mb-4">Nerve conduction studies and electromyography</p>
+                    <div class="text-purple-600 font-medium">$400 - $600</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">💊</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Epilepsy Management</h3>
+                    <p class="text-gray-600 mb-4">Specialized treatment for seizure disorders</p>
+                    <div class="text-purple-600 font-medium">$200 - $400</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Movement Disorder Care</h3>
+                    <p class="text-gray-600 mb-4">Treatment for Parkinson's and related conditions</p>
+                    <div class="text-purple-600 font-medium">$300 - $500</div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="text-4xl mb-4">🧪</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Clinical Trials</h3>
+                    <p class="text-gray-600 mb-4">Access to cutting-edge treatments</p>
+                    <div class="text-purple-600 font-medium">Consultation Required</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Times -->
+    <section id="appointments" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Available Times</h2>
+                <p class="text-lg text-gray-600">Schedule your neurological consultation</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-purple-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Monday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">8:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">10:30 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">2:00 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">4:00 PM</div>
+                    </div>
+                </div>
+                
+                <div class="bg-purple-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Tuesday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">8:30 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">11:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">1:30 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">3:30 PM</div>
+                    </div>
+                </div>
+                
+                <div class="bg-purple-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Wednesday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">10:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">12:00 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">3:00 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">5:00 PM</div>
+                    </div>
+                </div>
+                
+                <div class="bg-purple-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Thursday</h3>
+                    <div class="space-y-2">
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">9:00 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">11:30 AM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">2:30 PM</div>
+                        <div class="bg-white p-3 rounded-lg text-center cursor-pointer hover:bg-purple-100 transition-colors">4:30 PM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Contact Dr. Chen</h2>
+                <p class="text-lg text-gray-300">Neurological care when you need it</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-4xl mb-4">📞</div>
+                    <h3 class="text-xl font-bold mb-2">Phone</h3>
+                    <p class="text-gray-300">(555) 123-BRAIN</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4">📧</div>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-gray-300">dr.chen@neurocare.com</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4">📍</div>
+                    <h3 class="text-xl font-bold mb-2">Location</h3>
+                    <p class="text-gray-300">456 Neurology Center<br>Brain Institute, CA 90210</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showBooking() {
+            alert('Booking system would open here. Contact (555) 123-BRAIN to schedule.');
+        }
+    </script>
+</body>
+</html>
